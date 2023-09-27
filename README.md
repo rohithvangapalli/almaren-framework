@@ -78,16 +78,16 @@ Almaren connector is available in
 [Maven Central](https://mvnrepository.com/artifact/com.github.music-of-the-ainur)
 repository.
 
-| version                    | Connector Artifact                                               |
-|----------------------------|------------------------------------------------------------------|
-| Spark 3.4.x and scala 2.13 | `com.github.music-of-the-ainur:almaren-framework_2.13:0.9.10-3.4` |
-| Spark 3.4.x and scala 2.12 | `com.github.music-of-the-ainur:almaren-framework_2.12:0.9.10-3.4` |
-| Spark 3.3.x and scala 2.13 | `com.github.music-of-the-ainur:almaren-framework_2.13:0.9.10-3.3` |
-| Spark 3.3.x and scala 2.12 | `com.github.music-of-the-ainur:almaren-framework_2.12:0.9.10-3.3` |
-| Spark 3.2.x and scala 2.12 | `com.github.music-of-the-ainur:almaren-framework_2.12:0.9.10-3.2` |
-| Spark 3.1.x and scala 2.12 | `com.github.music-of-the-ainur:almaren-framework_2.12:0.9.10-3.1` |
-| Spark 2.4.x and scala 2.12 | `com.github.music-of-the-ainur:almaren-framework_2.12:0.9.10-2.4` |
-| Spark 2.4.x and scala 2.11 | `com.github.music-of-the-ainur:almaren-framework_2.11:0.9.10-2.4` |
+| version                    | Connector Artifact                                                |
+|----------------------------|-------------------------------------------------------------------|
+| Spark 3.4.x and scala 2.13 | `com.github.music-of-the-ainur:almaren-framework_2.13:0.9.11-3.4` |
+| Spark 3.4.x and scala 2.12 | `com.github.music-of-the-ainur:almaren-framework_2.12:0.9.11-3.4` |
+| Spark 3.3.x and scala 2.13 | `com.github.music-of-the-ainur:almaren-framework_2.13:0.9.11-3.3` |
+| Spark 3.3.x and scala 2.12 | `com.github.music-of-the-ainur:almaren-framework_2.12:0.9.11-3.3` |
+| Spark 3.2.x and scala 2.12 | `com.github.music-of-the-ainur:almaren-framework_2.12:0.9.11-3.2` |
+| Spark 3.1.x and scala 2.12 | `com.github.music-of-the-ainur:almaren-framework_2.12:0.9.11-3.1` |
+| Spark 2.4.x and scala 2.12 | `com.github.music-of-the-ainur:almaren-framework_2.12:0.9.11-2.4` |
+| Spark 2.4.x and scala 2.11 | `com.github.music-of-the-ainur:almaren-framework_2.11:0.9.11-2.4` |
 
 ### Batch Example
 ```scala
@@ -363,6 +363,12 @@ Decrease the number of partitions in the RDD to numPartitions. Useful for runnin
 
 ```scala
 coalesce(10)
+```
+
+Cache Dataframe with Storage Level
+
+```scala
+cache(true,storageLevel = MEMORY_AND_DISK)
 ```
 
 #### Repartition
