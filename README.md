@@ -61,17 +61,17 @@ The Almaren Framework provides a simplified consistent minimalistic layer over A
 To add Almaren Framework dependency to your sbt build:
 
 ```
-libraryDependencies += "com.github.music-of-the-ainur" %% "almaren-framework" % "0.9.10-3.3"
+libraryDependencies += "com.github.music-of-the-ainur" %% "almaren-framework" % "0.9.11-3.3"
 ```
 
 To run in spark-shell:
 For scala version-2.12:
 ```
-spark-shell --packages "com.github.music-of-the-ainur:almaren-framework_2.12:0.9.10-3.3"
+spark-shell --packages "com.github.music-of-the-ainur:almaren-framework_2.12:0.9.11-3.3"
 ```
 For scala version-2.13:
 ```
-spark-shell --packages "com.github.music-of-the-ainur:almaren-framework_2.13:0.9.10-3.3"
+spark-shell --packages "com.github.music-of-the-ainur:almaren-framework_2.13:0.9.11-3.3"
 ```
 
 Almaren connector is available in
@@ -80,6 +80,8 @@ repository.
 
 | version                    | Connector Artifact                                                |
 |----------------------------|-------------------------------------------------------------------|
+| Spark 3.5.x and scala 2.13 | `com.github.music-of-the-ainur:almaren-framework_2.13:0.9.11-3.5` |
+| Spark 3.5.x and scala 2.12 | `com.github.music-of-the-ainur:almaren-framework_2.12:0.9.11-3.5` |
 | Spark 3.4.x and scala 2.13 | `com.github.music-of-the-ainur:almaren-framework_2.13:0.9.11-3.4` |
 | Spark 3.4.x and scala 2.12 | `com.github.music-of-the-ainur:almaren-framework_2.12:0.9.11-3.4` |
 | Spark 3.3.x and scala 2.13 | `com.github.music-of-the-ainur:almaren-framework_2.13:0.9.11-3.3` |
